@@ -1,0 +1,508 @@
+
+
+
+
+/* ======================== */
+/* Global Styles            */
+/* ======================== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  background-color: #ffffff;
+  color: #111;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ======================== */
+/* Banner / Navbar           */
+/* ======================== */
+.site-banner {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.navbar-overlay {
+  position: absolute;
+  top: 50%;
+  right: 8rem;
+  transform: translateY(-90%);
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+/* ======================== */
+/* Hero Section             */
+/* ======================== */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.hero-carousel {
+  width: 75%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+}
+
+/* ======================== */
+/* Footer                   */
+/* ======================== */
+.site-footer {
+  background: linear-gradient(135deg, rgba(0, 123, 153, 0.8), rgba(0, 180, 170, 0.8));
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgb(193, 225, 225);
+  font-size: 0.95rem;
+  border-top: 1px solid rgba(0, 123, 153, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+.site-footer a {
+  color: #007c91;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ======================== */
+/* Coaching Page / Cards    */
+/* ======================== */
+.coaching-wide-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+  padding: 0.75rem 1rem;
+  background-color: rgba(0, 180, 170, 0.05);
+  border-radius: 16px;
+  gap: 2rem;
+}
+
+.coaching-wide-text {
+  flex: 1 1 330px;
+  max-width: 400px;
+}
+
+.coaching-wide-text img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.coaching-wide-image {
+  flex: 1 1 380px;
+  max-width: 500px;
+}
+
+.coaching-wide-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.coaching-cards-section {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  margin: 1rem auto 4rem auto;
+  padding: 0 2rem;
+  max-width: 1200px;
+}
+
+.coaching-image-card {
+  flex: 1 1 45%;
+  max-width: 500px;
+  border: 2px solid rgba(135, 206, 235, 0.7);
+  border-radius: 18px;
+  padding: 0.5rem;
+  background-color: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.coaching-image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}
+
+.coaching-image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.coaching-one-liner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 3rem auto;
+  padding: 0 1rem;
+}
+
+.coaching-one-liner img {
+  width: 200%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+}
+
+/* ======================== */
+/* Banner CTA / Actions      */
+/* ======================== */
+.coaching-banner-section {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 4rem auto;
+}
+
+.coaching-banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+.banner-cta-button,
+.banner-action {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-cta-button img,
+.banner-action img {
+  max-width: 600px;
+  height: auto;
+  display: block;
+}
+
+.banner-cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.banner-action:hover {
+  transform: translateY(-3px);
+}
+
+/* Optional per-action tweaks */
+.signup-action img { max-width: 600px; }
+.email-action img { max-width: 600px; }
+
+.coaching-banner-actions-bg {
+  background-color: #eaf3fb;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+.coaching-banner-actions {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ======================== */
+/* Responsive Adjustments   */
+/* ======================== */
+@media (max-width: 768px) {
+  .site-banner {
+    height: 120px;
+  }
+
+  .navbar-overlay {
+    padding: 0 1.5rem;
+  }
+
+  .navbar-overlay .nav-buttons {
+    gap: 8px;
+  }
+
+  .navbar-overlay .nav-button img {
+    max-height: 70px;
+  }
+
+  .banner-cta-button {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .banner-cta-button img {
+  width: 280px;
+  height: auto;
+  display: block;
+}
+
+  .coaching-banner-actions-bg {
+    padding: 1.5rem 0 2rem;
+    margin-top: -1.5rem;
+  }
+
+  .coaching-banner-actions {
+    gap: 1.25rem;
+  }
+
+  .coaching-cards-section {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .coaching-image-card {
+    max-width: 100%;
+  }
+}
+
+/* Banner CTA button (top-right inside banner) */
+.banner-cta-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-cta-button img {
+  width: 400px; /* large for desktop banner */
+  height: auto;
+  display: block;
+}
+
+.banner-cta-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments for top-right banner button */
+@media (max-width: 768px) {
+  .banner-cta-button img {
+    width: 160px;
+  }
+}
+
+
+/* Banner action row (below banner) */
+.banner-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.banner-action img {
+  width: 600px; /* shared base sizing, adjust per action */
+  height: auto;
+  display: block;
+}
+
+.banner-action:hover {
+  transform: translateY(-3px);
+}
+
+/* Optional per-action tweaks */
+.signup-action img {
+  width: 600px;
+}
+
+.email-action img {
+  width: 660px; /* slightly larger if needed */
+}
+
+
+.training-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.training-plan-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.training-plan-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.training-plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.training-plan-email-cta {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.training-plan-email-cta img {
+  max-width: 600px;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.coaching-banner-section {
+  position: relative;
+  max-width: 1200px;
+  margin: 4rem auto 3rem auto;
+}
+
+.banner-cta-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 10;
+}
+
+.banner-cta-button img {
+  width: 400px;
+}
+
+.coaching-primary-cta {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 2rem auto !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.coaching-primary-cta img {
+  width: 400px !important;  /* force a desktop width */
+  height: auto !important;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .coaching-primary-cta img {
+    max-width: 280px; /* smaller for mobile */
+  }
+}
+
+.training-plan-email-cta {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 4rem 0;
+
+}
+
+.training-plan-email-cta img {
+  max-width: 600px; /* default for desktop */
+  width: 100%;       /* scales down if container is smaller */
+  height: auto;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .training-plan-email-cta img {
+    max-width: 280px; /* smaller on mobile */
+  }
+}
+
+/* ======================== */
+/* Training Plans Header    */
+/* ======================== */
+.training-plans-header {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 2rem auto;
+  padding: 0 1rem;
+}
+
+.training-plans-header-image {
+  width: 100%;
+  max-width: 900px; /* adjust if needed */
+  height: auto;
+  display: block;
+}
+
+.store-heading {
+  display: flex;
+  justify-content: center;
+  width: 100%;         /* make container full width */
+  max-width: 1200px;   /* optional, set a sensible max */
+  margin: 0 auto;      /* center container */
+}
+
+.store-heading-svg {
+  width: 100%;          /* take full width of container */
+  height: auto;         /* keep aspect ratio */
+  max-width: 1200px;    /* optional, desktop limit */
+  display: block;       /* remove inline behavior */
+}

@@ -1,0 +1,52 @@
+/* src/pages/Store.css */
+
+.rooted-page {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+  color: #111;
+}
+
+.rooted-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  line-height: 1.4;
+}
+
+.rooted-heading span {
+  font-size: 1.5rem;
+  color: #555;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.rooted-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; /* less gap */
+  justify-items: center;
+  align-items: start; /* align top */
+}
+
+.rooted-image-grid img {
+  width: 100%;
+  max-width: 350px; /* bigger width */
+  height: auto; /* let height adjust */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: scale(1.4);
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+/* Wrap images in a div to handle overflow for zoom */
+.rooted-image-grid > div {
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+}
+
