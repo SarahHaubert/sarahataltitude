@@ -368,7 +368,7 @@ html {
   .navbar-overlay {
     top: 50%;
     left: 50%;
-    transform: translate(-90%);
+    transform: translateY(-90%);
     width: auto;
     justify-content: flex-end;
     padding: 0;
