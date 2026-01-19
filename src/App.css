@@ -595,7 +595,7 @@ html {
   /* Coaching one-liner */
   .coaching-one-liner img {
     width: 100%; /* full width of container */
-    max-width: 280px; /* mobile max width */
+    max-width: 320px; /* mobile max width */
     height: auto;
   }
 }
@@ -645,7 +645,7 @@ html {
   }
 
   .nav-button img {
-    max-height: 40px; /* smaller icons so they fit inside banner */
+    max-height: 10px; /* smaller icons so they fit inside banner */
     width: auto;
     display: block;
   }
