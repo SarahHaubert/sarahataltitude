@@ -629,23 +629,30 @@ html {
 }
 
 @media (max-width: 768px) {
+  /* Navbar overlay */
   .navbar-overlay {
     position: absolute;
-    top: 50%;           /* vertically center within banner */
-    left: 50%;          /* horizontal center */
-    transform: translate(-50%, -50%); /* center perfectly */
-    width: auto;        /* shrink-wrap content */
+    top: 50%;                 /* vertically center */
+    left: 50%;                /* horizontally center */
+    transform: translate(-50%, -50%);
+    display: flex;
     justify-content: center;
+    align-items: center;
+    width: auto;              /* shrink-wrap content */
+    padding: 0;
     z-index: 10;
-    padding: 0;         /* optional, remove extra padding */
   }
 
+  /* Buttons container */
   .nav-buttons {
-    gap: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;                 /* small spacing between buttons */
   }
 
+  /* Individual button images */
   .nav-button img {
-    max-height: 10px; /* smaller icons so they fit inside banner */
+    max-height: 40px;         /* adjust to fit banner */
     width: auto;
     display: block;
   }
