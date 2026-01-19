@@ -1,7 +1,0 @@
-name = "sarahataltitude"
-type = "static"
-compatibility_date = "2026-01-19"
-
-[build]
-command = "npm run build"
-directory = "dist"
