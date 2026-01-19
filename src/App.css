@@ -627,3 +627,26 @@ html {
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-overlay {
+    position: absolute;
+    top: 50%;           /* vertically center within banner */
+    left: 50%;          /* horizontal center */
+    transform: translate(-50%, -50%); /* center perfectly */
+    width: auto;        /* shrink-wrap content */
+    justify-content: center;
+    z-index: 10;
+    padding: 0;         /* optional, remove extra padding */
+  }
+
+  .nav-buttons {
+    gap: 12px;
+  }
+
+  .nav-button img {
+    max-height: 40px; /* smaller icons so they fit inside banner */
+    width: auto;
+    display: block;
+  }
+}
