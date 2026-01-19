@@ -36,8 +36,8 @@ body, html {
 .navbar-overlay {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  right: 8rem;
+  transform: translateY(-90%);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -368,9 +368,9 @@ html {
   .navbar-overlay {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-90%);
     width: auto;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0;
   }
 
