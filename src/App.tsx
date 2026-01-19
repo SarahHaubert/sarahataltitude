@@ -1,4 +1,4 @@
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Books from './pages/Store';
 import Coaching from './pages/Coaching';
 import Sound from './pages/Sound';
