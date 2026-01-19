@@ -379,7 +379,7 @@ body, html {
 
 .training-plan-card {
   background-color: #fff;
-  border-radius: 16px;
+  border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -392,7 +392,7 @@ body, html {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 12px;
+  border-radius: 4px;
 }
 
 .training-plan-card:hover {
@@ -564,6 +564,66 @@ html {
   }
 
   .store-item img {
+    max-width: 100%;
+  }
+}
+
+/* ======================== */
+/* Mobile fixes for homepage */
+/* ======================== */
+@media (max-width: 768px) {
+  /* Navbar fixes */
+  .navbar-overlay {
+    top: auto; /* remove vertical offset */
+    bottom: 1rem; /* place near bottom of banner */
+    right: 1rem;  /* small padding from right */
+    transform: none; /* remove translate */
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-buttons {
+    justify-content: center;
+    gap: 12px; /* smaller spacing on mobile */
+  }
+
+  .nav-button img {
+    max-height: 50px; /* smaller icons */
+    width: auto;
+  }
+
+  /* Coaching one-liner */
+  .coaching-one-liner img {
+    width: 100%; /* full width of container */
+    max-width: 280px; /* mobile max width */
+    height: auto;
+  }
+}
+
+/* ======================== */
+/* Coaching Page Mobile Fixes */
+/* ======================== */
+@media (max-width: 768px) {
+  /* Hide top banner CTA on mobile */
+  .coaching-banner-section .banner-cta-button {
+    display: none;
+  }
+
+  /* Make the bottom primary CTA smaller and centered */
+  .coaching-primary-cta img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Stack training plans in a column */
+  .training-plan-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 1.5rem;
+  }
+
+  /* Optional: reduce spacing around training plan cards */
+  .training-plan-card {
     max-width: 100%;
   }
 }
