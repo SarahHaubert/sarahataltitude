@@ -1,4 +1,3 @@
-import './Rooted.css';
 
 export default function Rooted() {
   return (

@@ -1,5 +1,4 @@
 // src/pages/SoundHealing.tsx
-import './Sound.css';
 
 export default function SoundHealing() {
   return (

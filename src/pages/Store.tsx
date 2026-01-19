@@ -1,5 +1,3 @@
-// src/pages/Store.tsx
-import './Store.css';
 
 export default function Store() {
   return (
