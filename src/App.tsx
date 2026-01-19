@@ -7,13 +7,13 @@ import Rooted from './pages/Rooted';
 
 import './App.css';
 
-import Slider, { Settings } from 'react-slick';
+import Slider from 'react-slick';
+import type { Settings } from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
-  const location = useLocation();
-  const isHomePage = location.pathname === '/';
+  
 
   // Carousel settings go here, inside the component but before return
   const carouselSettings: Settings = {
@@ -107,7 +107,6 @@ function App() {
           <Route path="/store" element={<Books />} />
           <Route path="/sound" element={<Sound />} />
           <Route path="/rooted" element={<Rooted />} />
-          <Route path="/trainingplans" element={<TrainingPlans />} />
 
 
         </Routes>
