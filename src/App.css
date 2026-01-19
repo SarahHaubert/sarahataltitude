@@ -644,7 +644,7 @@ html {
     position: absolute;
     top: 50%;                 /* vertically center */
     left: 50%;                /* horizontally center */
-    transform: translateY(-90%);
+    transform: translate(-10%, -90%);
     display: flex;
     justify-content: center;
     align-items: center;
