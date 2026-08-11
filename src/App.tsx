@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import Books from './pages/Store';
+import Books from './pages/books';
 import Coaching from './pages/Coaching';
 import Sound from './pages/Sound';
 import Rooted from './pages/Rooted';
@@ -41,7 +41,7 @@ function App() {
             <Link to="/coaching" className="nav-button">
               <img src="/coaching.svg" alt="Strength" />
             </Link>
-            <Link to="/store" className="nav-button">
+            <Link to="/books" className="nav-button">
               <img src="/books.svg" alt="Store" />
             </Link>
             {/* <Link to="/sound" className="nav-button">
