@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import Books from './pages/Store';
 import Coaching from './pages/Coaching';
@@ -9,13 +8,12 @@ import TrainingPlans from "./pages/TrainingPlans";
 
 import './App.css';
 
-import Slider, { Settings } from 'react-slick';
-import "slick-carousel/slick/slick.css";
+import Slider from 'react-slick';
+import type { Settings } from 'react-slick';import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const location = useLocation();
-  const isHomePage = location.pathname === '/';
 
   // Carousel settings go here, inside the component but before return
   const carouselSettings: Settings = {
