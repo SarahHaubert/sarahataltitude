@@ -1,4 +1,4 @@
-import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import Books from './pages/Store';
 import Coaching from './pages/Coaching';
 import Sound from './pages/Sound';
@@ -13,7 +13,6 @@ import type { Settings } from 'react-slick';import "slick-carousel/slick/slick.c
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
-  const location = useLocation();
 
   // Carousel settings go here, inside the component but before return
   const carouselSettings: Settings = {
