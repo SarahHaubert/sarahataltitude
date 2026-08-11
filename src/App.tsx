@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
-import Books from './pages/books';
+import Books from './pages/Store';
 import Coaching from './pages/Coaching';
 import Sound from './pages/Sound';
 import Rooted from './pages/Rooted';
